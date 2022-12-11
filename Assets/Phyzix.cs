@@ -5,13 +5,17 @@ using UnityEngine;
 public class Phyzix : MonoBehaviour
 {
     Rigidbody rb;
-
+    //on ground
     bool landed;
+    //was thrown
     bool thrown;
+    //value returned
     bool returned;
-
+    //if the dice was selected to be rolled
+    bool selected;
+    //initial position
     Vector3 initPosition;
-
+    //value of dice that was rolled
     public int diceValue;
 
     private void Start()
@@ -50,7 +54,7 @@ public class Phyzix : MonoBehaviour
             thrown = true;
             rb.useGravity = true;
             rb.AddTorque(Random.Range(0, 200), 0, Random.Range(0, 200));
-            rb.AddForce(Random.Range(-60, -80), 0, Random.Range(-60, -80));
+            rb.AddForce(Random.Range(80, 350), 0, Random.Range(80, 350));
         }
         else if (thrown && landed)
         {
@@ -75,6 +79,7 @@ public class Phyzix : MonoBehaviour
         rb.useGravity = false;
 
     }
+    //Returns random value for the dice (WILL BE CHANGED WITH WORKING TEXTURES)
     void ValueRNG()
     {
         if (rb.IsSleeping() && landed)
@@ -94,10 +99,3 @@ public class Phyzix : MonoBehaviour
         }
     }
 }
-
-
-
-
-// -60:-80 force for rolls
-// go from right to left
-// roll agains't the North, South and West walls. Make sure they come from high enough to go over East wall
