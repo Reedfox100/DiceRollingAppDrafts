@@ -4687,8 +4687,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036457549}
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -0.2, y: 2.5, z: 0}
-  m_LocalScale: {x: 3, y: -1, z: 0.5}
+  m_LocalPosition: {x: -0.2, y: 0.25, z: 0}
+  m_LocalScale: {x: 0.04, y: -0.001, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5378,8 +5378,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534399245}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 2.5, z: -0.2}
-  m_LocalScale: {x: 2, y: -1, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0.25, z: -0.2}
+  m_LocalScale: {x: 0.04, y: -0.001, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6105,8 +6105,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763588656}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 2.5, z: 0.2}
-  m_LocalScale: {x: 2, y: -1, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0.2}
+  m_LocalScale: {x: 0.04, y: -0.001, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6203,8 +6203,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834181839}
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0.2, y: 2.5, z: 0}
-  m_LocalScale: {x: 3, y: -1, z: 0.5}
+  m_LocalPosition: {x: 0.2, y: 0.25, z: 0}
+  m_LocalScale: {x: 0.04, y: -0.001, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6490,7 +6490,7 @@ Transform:
   m_GameObject: {fileID: 1884706043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.04, y: 0.033333335, z: 0.04}
+  m_LocalScale: {x: 0.04, y: 0.01, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -7334,7 +7334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2783756180742090507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: -0.0065, y: 0.2383, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7365,7 +7365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3852485854298948597}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.0937, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7380,7 +7380,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4312252721146404510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: -0.1511, y: 0.1784, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7409,6 +7409,7 @@ GameObject:
   - component: {fileID: 3230285572003288910}
   - component: {fileID: 3230285572003288909}
   - component: {fileID: 3230285572003288911}
+  - component: {fileID: 3230285572003288912}
   m_Layer: 0
   m_Name: node_id6
   m_TagString: Untagged
@@ -7519,6 +7520,19 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
+--- !u!114 &3230285572003288912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2783756180742090507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ae05a7e106d7e4cac8767094869c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diceValue: 0
 --- !u!23 &3579684280405190361
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7575,6 +7589,7 @@ GameObject:
   - component: {fileID: 4540582365139418036}
   - component: {fileID: 4540582365139418035}
   - component: {fileID: 4540582365139418037}
+  - component: {fileID: 4540582365139418038}
   m_Layer: 0
   m_Name: node_id12
   m_TagString: Untagged
@@ -7596,6 +7611,7 @@ GameObject:
   - component: {fileID: 4312252721146404511}
   - component: {fileID: 4312252721146404512}
   - component: {fileID: 4312252721146404513}
+  - component: {fileID: 4312252721146404514}
   m_Layer: 0
   m_Name: node_id8
   m_TagString: Untagged
@@ -7664,6 +7680,19 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
+--- !u!114 &4312252721146404514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4312252721146404510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ae05a7e106d7e4cac8767094869c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diceValue: 0
 --- !u!23 &4540582365139418034
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7767,6 +7796,19 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
+--- !u!114 &4540582365139418038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3852485854298948597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ae05a7e106d7e4cac8767094869c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diceValue: 0
 --- !u!23 &4807451455924992766
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7929,6 +7971,7 @@ GameObject:
   - component: {fileID: 8833483974315384954}
   - component: {fileID: 8833483974315384953}
   - component: {fileID: 8833483974315384955}
+  - component: {fileID: 8833483974315384956}
   m_Layer: 0
   m_Name: node_id10
   m_TagString: Untagged
@@ -7950,6 +7993,7 @@ GameObject:
   - component: {fileID: 8904296100247400739}
   - component: {fileID: 8904296100247400738}
   - component: {fileID: 8904296100247400740}
+  - component: {fileID: 8904296100247400741}
   m_Layer: 0
   m_Name: node_id20
   m_TagString: Untagged
@@ -7973,7 +8017,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5242993998857667257}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: -0.135, y: 0.3154, z: 0.1246}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8037,6 +8081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ae05a7e106d7e4cac8767094869c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diceValue: 0
 --- !u!33 &8662514720784574721
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8061,7 +8106,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6659056084491679207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0.0545, y: 0.1178, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8129,6 +8174,19 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
+--- !u!114 &8833483974315384956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6659056084491679207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ae05a7e106d7e4cac8767094869c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diceValue: 0
 --- !u!4 &8904296100247400737
 Transform:
   m_ObjectHideFlags: 0
@@ -8137,7 +8195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6732042264216822974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: -0.089, y: 0.0716, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8205,3 +8263,16 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
+--- !u!114 &8904296100247400741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6732042264216822974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ae05a7e106d7e4cac8767094869c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diceValue: 0
