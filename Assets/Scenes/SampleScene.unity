@@ -7823,6 +7823,7 @@ GameObject:
   - component: {fileID: 856102449}
   - component: {fileID: 7943705043809703719}
   - component: {fileID: 7943705043809703720}
+  - component: {fileID: 7943705043809703721}
   m_Layer: 0
   m_Name: node_id4
   m_TagString: Untagged
@@ -8024,6 +8025,18 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
+--- !u!114 &7943705043809703721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5242993998857667257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ae05a7e106d7e4cac8767094869c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &8662514720784574721
 MeshFilter:
   m_ObjectHideFlags: 0
