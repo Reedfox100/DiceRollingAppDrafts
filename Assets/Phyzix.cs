@@ -33,12 +33,12 @@ public class Phyzix : MonoBehaviour
                 RollDice();
             }
 
-            if (rb.IsSleeping() && !landed && thrown)
+            if (!landed && thrown)
             {
                 landed = true;
             }
 
-            if (rb.IsSleeping() && landed && thrown && !returned)
+            if (landed && thrown && !returned)
             {
                 ValueRNG();
                 returned = true;
@@ -63,7 +63,7 @@ public class Phyzix : MonoBehaviour
     //Rolls the dice and waits for resetable reroll
     void RollDice()
     {
-        if (!thrown && !landed)
+        if (!thrown && !landed && !resetWait)
         {
             thrown = true;
             rb.useGravity = true;
@@ -73,6 +73,10 @@ public class Phyzix : MonoBehaviour
         else if (thrown && landed)
         {
             Reset();
+        }
+        else if (resetWait)
+        {
+            resetWait = false;
         }
     }
     //Resets location
