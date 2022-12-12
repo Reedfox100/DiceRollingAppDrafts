@@ -13,15 +13,14 @@ public class Phyzix : MonoBehaviour
     bool returned;
     //if the dice was selected to be rolled
     bool selected;
-    //initial position
-    Vector3 initPosition;
     //value of dice that was rolled
     public int diceValue;
+    //fixing for out of bounds dice
+    public bool resetWait = false;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        initPosition = transform.position;
         rb.useGravity = false;
     }
 
@@ -44,6 +43,21 @@ public class Phyzix : MonoBehaviour
                 ValueRNG();
                 returned = true;
             }
+            if (rb.position.y < -0.5)
+            {
+                Reset();
+                resetWait = true;
+            }
+            if (rb.position.x < -0.3 || rb.position.x > 0.3)
+            {
+                Reset();
+                resetWait = true;
+            }
+            if (rb.position.z < -0.3 || rb.position.z > 0.3)
+            {
+                Reset();
+                resetWait = true;
+            }
         }
     }
     //Rolls the dice and waits for resetable reroll
@@ -54,29 +68,22 @@ public class Phyzix : MonoBehaviour
             thrown = true;
             rb.useGravity = true;
             rb.AddTorque(Random.Range(0, 200), 0, Random.Range(0, 200));
-            rb.AddForce(Random.Range(80, 350), 0, Random.Range(80, 350));
+            rb.AddForce(Random.Range(-350, 350), 0, Random.Range(-350, 350));
         }
         else if (thrown && landed)
         {
             Reset();
         }
     }
-    //Rolls from ground with transform from ground into air
-    void RollAgain()
-    {
-        Reset();
-        thrown = true;
-        rb.useGravity = true;
-        rb.AddTorque(Random.Range(0, 200), 0, Random.Range(0, 200));
-    }
     //Resets location
     void Reset()
     {
-        transform.position = initPosition;
+        transform.position = new Vector3(Random.Range((float)-0.15, (float)0.15), (float)0.35, Random.Range((float) -0.15, (float) 0.15));
         thrown = false;
         landed = false;
         returned = false;
         rb.useGravity = false;
+        
 
     }
     //Returns random value for the dice (WILL BE CHANGED WITH WORKING TEXTURES)
