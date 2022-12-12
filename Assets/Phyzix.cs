@@ -68,7 +68,7 @@ public class Phyzix : MonoBehaviour
             thrown = true;
             rb.useGravity = true;
             rb.AddTorque(Random.Range(0, 200), 0, Random.Range(0, 200));
-            rb.AddForce(Random.Range(-350, 350), 0, Random.Range(-350, 350));
+            rb.AddForce(Random.Range(-150, 150), 0, Random.Range(-150, 150));
         }
         else if (thrown && landed)
         {
